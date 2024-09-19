@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <!--google font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
@@ -18,16 +19,22 @@
     <!--header design-->
     <header class="header">
         <a class="logo" href="index.html"> Portfolio.</a>
-        <i class='bx bx-menu-alt-right' id="menu-icon"></i>
         <!--navigation bar-->
-        <nav class="navbar">
-            <a href="index.html" class="active">Home <i class='bx bx-home'></i> </a>
-            <a href="#about">About Me <i class='bx bxs-hand'></i> </a>
-            <a href="#skills">Skills <i class='bx bx-laptop'></i> </a>
-            <a href="#education">Education <i class='bx bx-book-reader'></i> </a>
-            <a href="#works">Works <i class='bx bxs-briefcase'></i></a>
-            <a href="#contact">Contact <i class='bx bx-headphone'></i></a>
-        </nav>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home <i class='bx bx-home'></i></a></li>
+                <li><a href="#about">About Me <i class='bx bxs-hand'></i> </a></li>
+                <li><a href="#skills">Skills <i class='bx bx-laptop'></i> </a></li>
+                <li><a href="#education">Education <i class='bx bx-book-reader'></i> </a></li>
+                <li><a href="#works">Works <i class='bx bxs-briefcase'></i> </a></li>
+                <li><a href="#contact">Contact <i class='bx bx-headphone'></i></a></li>
+                <li><a href="index.html"><i class='bx bx-window-close' style="font-size: 3rem;"></i></a></li>
+            </ul>
+        </nav>  
     </header>
 
     <!--home section design-->
@@ -242,7 +249,6 @@
 
     <!--works design-->
     <section class="works" id="works">
-        <h2 class="heading">My <span style="color: white;">Works</span> <i class='bx bxs-briefcase'></i></h2>
         <h3 class="heading">Latest <span style="color:white;">Projects</span></h3> <br> <br>
         <div class="works-container">
             <div class="works-box1">
@@ -263,9 +269,6 @@
                     <a href="#" class="btn">View Work <i class='bx bx-link-external'></i></a>
             </div>
         </div> <br>
-        <h2><span style="color:white; font-size: 1.7rem; font-family: cursive;">Know more about </span> FRET <span style="color:white; font-size: 1.7rem;">SPEND YOUR FREETIME HERE..</span></h2>
-        <h4>This can give you a brief description about my startup project named FRET that is very economic friendly . The main idea of this project is that creating different platforms that is very useful for people in different areas and also a platform that helps students with basic knowledge in computer and other fileds . Some of the programs includes data entry , data analystics , web designing , content creating , web developement.<br> <br> To Provide works or search for works click the link below. </h4>
-        <a class="btn" href="works.html" style="border-radius: 4px; text-align: center;">FRET ACADEMY</a>
     </section>
 
     <!--contact design-->
@@ -274,21 +277,19 @@
         <h5>SAY HELLO <i class='bx bxs-hand'></i></h5>
         <h4>GET IN TOUCH WITH ME </h4> <br>
         <h5>If you want to contact me use these links of social media . </h5> <br>
-        <h3><i class='bx bx-phone' style="color: #9f1e1e; font-weight: bolder; font-size: 2.5rem;"></i> Phone Number</h3>
+        <h3><i class='bx bx-phone' style="color: #9f1e1e; font-weight: bolder;"></i> Phone Number</h3>
         <a href="tel:+8921746693">+91 89217 46693</a> <br> <br>
         <h3><i class='bx bxl-gmail' style="color: #9f1e1e;"></i> Email Id </h3>
         <a href="mailto:amalsonuoff@gmail.com">amalsonuoff@gmail.com</a> <br> <br>
-        <h3><i class='bx bxl-instagram' style="color: #9f1e1e;"></i> Linked In </h3>
+        <h3><i class='bx bxl-linkedin' style="color: #9f1e1e;"></i> Linked In </h3>
         <a href="https://www.linkedin.com/in/amal-sonu-09298a320/">Amal Sonu</a> <br> <br>
-        <h3><i class='bx bxl-instagram' style="color: #9f1e1e;"></i> Git Hub </h3>
+        <h3><i class='bx bxl-github' style="color: #9f1e1e;" ></i> Git Hub </h3>
         <a href="https://github.com/AmalSonu2874">AmalSonu2874</a> <br> <br>
           
     </section>
 
-    <!--footer-->
-    <section class="footer">
-        <p>lev3</p>
-    </section>
+    <!--custom js-->
+    <script src="script.js"></script>
 </body>
 
 </html>
