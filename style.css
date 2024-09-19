@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -8,74 +7,123 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-:root{
-    --bg-color:#1f242d;
-    --second-bg-color:#1f242d;
-    --text-color:#f91e1e;
-    --main-color:#f91e1e;
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #1f242d;
+    --text-color: #f91e1e;
+    --main-color: #f91e1e;
 }
 
 html {
-    font-size:62.5%;
-    overflow-x :hidden
+    font-size: 62.5%;
+    overflow-x: hidden
 }
 
 body {
     background: #1f242d;
-    color:#f91e1e;
+    color: #f91e1e;
 
 }
 
 section {
     min-height: 100vh;
-    padding:10rem 9% 2rem;
+    padding: 10rem 9% 2rem;
 }
 
 .header {
-    position:fixed;
-    width:100%;
+    position: fixed;
+    width: 100%;
     padding: 2rem 9%;
-    background:#f91e1e;
-    display:flex;
+    background: #f91e1e;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     z-index: 100;
 }
 
+.header.sticky {
+    border-bottom: .1rem solid black;
+}
+
 .logo {
-    font-size:3rem;
+    font-size: 3rem;
     color: #1f242d;
-    font-weight:600;
-    cursor:default;
-    text-shadow:;
+    font-weight: 600;
+    cursor: default;
+    text-shadow: ;
 }
 
 .navbar a {
-    font-size: 1.9rem;
-    color:white;
+    font-size: 1.5rem;
+    color: white;
     margin-left: 3rem;
-    transition: .3s;
-    font: weight 100px;;
+    transition: 0.3s;
+    font: weight 100px;
 }
 
 .navbar a:hover {
-    color:yellow;
+    color: yellow;
 }
 
-.navbar a:active{
+.navbar a:active {
     color: #f91e1e;
 }
 
 #menu-icon {
-    font-size: 3,6rem;
+    font-size: 3, 6rem;
     color: #f91e1e;
     display: none;
 }
 
-.home{
+nav {
+    background-color: #f91e1e;
+    color: #1f242d;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #f91e1e;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-content h3 {
@@ -85,13 +133,14 @@ section {
     text-shadow: 0 0 2px;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
 }
 
-span{
+span {
     color: #f91e1e;
 }
+
 .home-content h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -100,7 +149,7 @@ span{
 }
 
 
-.home-content p{
+.home-content p {
     font-size: 1.6rem;
     color: white;
     font-weight: bolder;
@@ -112,10 +161,10 @@ span{
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background:#1f242d;
+    background: #1f242d;
     border: 2rem solid #f91e1e;
     font-size: 2rem;
-    color:white;
+    color: white;
     margin-top: 1.5rem;
     margin-left: 0.5rem;
     margin-bottom: 1.5rem;
@@ -123,14 +172,14 @@ span{
     transition: .5sec ease;
 }
 
-.social-media a{
+.social-media a {
     background: #1f242d;
 }
 
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background:#f91e1e;
+    background: #f91e1e;
     border-radius: 4rem;
     color: white;
     box-shadow: 0 0 1rem #f91e1e;
@@ -139,11 +188,16 @@ span{
 }
 
 @keyframes example {
-    from {background-color:red;}
-    to {background-color: black;}
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: black;
+    }
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: none;
     background: #1f242d;
 }
@@ -152,13 +206,13 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
     background: #1f242d;
 }
 
 .heading {
     text-align: center;
-    font-size: 4rem ;
+    font-size: 4rem;
 }
 
 .about-content span {
@@ -171,30 +225,30 @@ span{
 }
 
 .about-content h3 {
-    color:white;
+    color: white;
     font-size: 2rem;
 }
 
-.about-content p{
+.about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
     font-weight: bold;
 }
 
 .about-content img {
-    width:100%;
+    width: 100%;
     margin: auto;
     padding: 10px;
 }
 
 .skills h2 {
     margin-bottom: rem;
-    color:white;
+    color: white;
 }
 
 .skills h4 {
     margin-bottom: 5rem;
-    color:white;
+    color: white;
     font-size: small;
 }
 
@@ -203,11 +257,11 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .skills-container .skills-box {
-    flex:1 1 30rem;
+    flex: 1 1 30rem;
     background: #1f242d;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -218,8 +272,9 @@ span{
 .skills-container .skills-box:hover {
     background: #f91e1e;
 }
+
 .skills-box {
-    font-size:3rem;
+    font-size: 3rem;
     color: white;
 }
 
@@ -227,7 +282,7 @@ span{
     font-size: 2rem;
 }
 
-.skills-box h5{
+.skills-box h5 {
     font-size: 1.4rem;
     margin: 1rem;
 }
@@ -239,13 +294,13 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap: 2rem;
     margin: 1rem;
 }
 
 
 .read-more .read-box {
-    flex:1 1 30rem;
+    flex: 1 1 30rem;
     background: #1f242d;
     padding: 3rem 2rem 4rem;
     border-radius: 1rem;
@@ -257,17 +312,17 @@ span{
 
 .read-more p {
     font-size: 1.4rem;
-    text-align: left ;
-    color:#f3e7bd;
+    text-align: left;
+    color: #f3e7bd;
 }
 
 .read-more li {
     font-size: 1.4rem;
-    text-align: left ;
-    color:#f3e7bd;
+    text-align: left;
+    color: #f3e7bd;
 }
 
-.read-more a{
+.read-more a {
     margin-top: 1rem;
     box-shadow: 0 0 0;
     border-radius: 12px;
@@ -275,14 +330,14 @@ span{
 }
 
 .education h2 {
-    color:#f91e1e;
+    color: #f91e1e;
     text-align: left;
     margin-bottom: 2rem;
     font-size: 3rem;
 }
 
 .education h3 {
-    font-size:1.5rem;
+    font-size: 1.5rem;
     color: #f3e7bd;
     text-align: left;
 }
@@ -307,62 +362,62 @@ span{
     margin: 1rem;
 }
 
-p { 
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:15px;
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
     color: #f3e7bd;
-} 
+}
 
-.container { 
-    background-color:white; 
-    width: 80%; 
-    border-radius:23px; 
-} 
+.container {
+    background-color: white;
+    width: 80%;
+    border-radius: 23px;
+}
 
-.skill { 
-    background-color:#f91e1e; 
-    color: white; 
-    padding: 1%; 
-    text-align: right; 
-    font-size:13px; 
-    border-radius:12px; 
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.skill {
+    background-color: #f91e1e;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 13px;
+    border-radius: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-} 
+}
 
-.html { 
-    width: 60%; 
-} 
+.html {
+    width: 60%;
+}
 
-.css { 
-    width: 70%; 
-} 
+.css {
+    width: 70%;
+}
 
-.bootstrap { 
-    width: 60%; 
-} 
+.bootstrap {
+    width: 60%;
+}
 
-.git { 
-    width: 50%; 
-} 
+.git {
+    width: 50%;
+}
 
-.python { 
-    width:40%; 
-} 
+.python {
+    width: 40%;
+}
 
-.JavaScript { 
-    width:75%; 
-} 
+.JavaScript {
+    width: 75%;
+}
 
 .works h2 {
-    color:#f91e1e;
+    color: #f91e1e;
     font-size: 4rem;
     font-weight: bolder;
 }
 
 .works h4 {
     margin-bottom: 5rem;
-    color:#f3e7bd;
+    color: #f3e7bd;
     font-size: 1.7rem;
     font-weight: bolder;
     margin: 2rem;
@@ -374,20 +429,19 @@ p {
 }
 
 .works h3 {
-<<<<<<< HEAD
-    font-size: small;
     color: #f91e1e;
 }
+
 .works-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap: 2rem;
 }
 
 .works-container .works-box1 {
-    flex:1 1 30rem;
+    flex: 1 1 30rem;
     background: #1f242d;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -398,7 +452,7 @@ p {
 .works-container .works-box1 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background:#f91e1e;
+    background: #f91e1e;
     border-radius: 4rem;
     color: white;
     box-shadow: 0 0 1rem #f3e7bd;
@@ -407,8 +461,8 @@ p {
 }
 
 .works-container .works-box2 {
-    flex:1 1 30rem;
-    background:#1f242d;
+    flex: 1 1 30rem;
+    background: #1f242d;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -418,7 +472,7 @@ p {
 .works-container .works-box2 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background:#eda423;
+    background: #eda423;
     border-radius: 4rem;
     color: white;
     box-shadow: 0 0 1rem white;
@@ -427,7 +481,7 @@ p {
 }
 
 .works-container .works-box3 {
-    flex:1 1 30rem;
+    flex: 1 1 30rem;
     background: #1f242d;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -438,7 +492,7 @@ p {
 .works-container .works-box3 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background:#57bbe2;
+    background: #57bbe2;
     border-radius: 4rem;
     color: white;
     box-shadow: 0 0 1rem white;
@@ -447,49 +501,55 @@ p {
 }
 
 .works-box1 {
-    font-size:5rem;
+    font-size: 5rem;
     color: white;
 }
+
 .works-box1 h4 {
     font-size: 3rem;
     font-weight: bolder;
 
 }
-.works-box1 h5{
+
+.works-box1 h5 {
     font-size: 1.4rem;
     margin: 1rem;
 }
 
 .works-box2 {
-    font-size:5rem;
+    font-size: 5rem;
     color: #eda423;
 }
+
 .works-box2 h4 {
     font-size: 3rem;
     font-weight: bolder;
-    color:#eda423;
+    color: #eda423;
 
 }
-.works-box2 h5{
+
+.works-box2 h5 {
     font-size: 1.4rem;
     margin: 1rem;
     color: #eda423;
 }
 
 .works-box3 {
-    font-size:5rem;
+    font-size: 5rem;
     color: white;
 }
+
 .works-box3 h4 {
     font-size: 3rem;
     font-weight: bolder;
-    color:#57bbe2;
+    color: #57bbe2;
 
 }
-.works-box3 h5{
+
+.works-box3 h5 {
     font-size: 1.4rem;
     margin: 1rem;
-    color:#57bbe2;
+    color: #57bbe2;
 }
 
 .contact {
@@ -497,45 +557,130 @@ p {
 }
 
 .contact h4 {
-    color: white ;
+    color: white;
     font-weight: bolder;
     font-size: 3rem;
 }
 
 .contact h5 {
-    color:white;
+    color: white;
     font-weight: lighter;
     text-shadow: 0 0 2px;
+<<<<<<< HEAD
+    font-size: 1rem;
+=======
     font-size : 2rem
+>>>>>>> 0ee693046eafa571f13330c2e30d19698795e277
 }
 
 .contact h3 {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     font-weight: bolder;
 }
 
-.contact a{
-    color:white;
+.contact a {
+    color: white;
     margin-left: 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
+
 .footer {
-    position:fixed;
-    width:100%;
+    position: fixed;
+    width: 100%;
     height: 100px;
     padding: 2rem 9%;
-    background:#f91e1e;
-    display:flex;
+    background: #f91e1e;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     z-index: 100;
 }
 
-  
-=======
-    font-size: large;
-    text-align: left;
-    color:#f91e1e;
+/*breakpoints*/
+
+@media (max-width : 1200px) {
+    html {
+        font-size: 55%;
+    }
 }
->>>>>>> c347950073bc73b686e2ea5a65dbd2c552380eef
+
+@media (max-width : 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width : 768px) {
+    #menu-icon {
+        display: block;
+        color: black;
+        font-size: xx-large;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #1f242d;
+        border-top: 1rem solid var(--second-bg-color);
+        box-shadow: 0.5rem 1rem var(--second-bg-color);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0;
+        text-align: right;
+    }
+
+@media (max-width: 700px) {
+    .checkbtn {
+        display: block;
+        order: 1;
+        margin-right: 20px;
+    }
+
+    ul {
+        position: fixed;
+        top:65px;
+        right: -100%;
+        background-color: #1f242d;
+        width: 40%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        transition: all 0s;
+        font-size: 0.8rem;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    ul li a {
+        font-size:1.7rem;
+    }
+
+    #check:checked~ul {
+        right: 0;
+    }
+    }
+}
