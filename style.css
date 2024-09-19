@@ -33,7 +33,7 @@ section {
 .header {
     position: fixed;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background: #f91e1e;
     display: flex;
     justify-content: space-between;
